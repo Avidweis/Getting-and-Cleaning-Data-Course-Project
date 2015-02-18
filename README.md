@@ -2,7 +2,7 @@ This repository includes a script and codebook for tidying the Human Activity Re
 
 The script (run_analysis.R) tidies the data set by averaging the mean and standard deviation of each feature for each activity by each subject. Specifically, it first sets up the workspace, then subsets only the mean and standard deviation variables for each feature, combines the training and test data sets into one, (re)names the subject, activity, and feature variables of the set, and lastly, exports the resulting (wide) tidy data set.
 
-Setting up the workspace, the script loads the "dplyr" package and imports then converts all the data (including the activity and feature lists) into "dplyr" data frames.
+Setting up the workspace, the script loads the "dplyr" package and imports then converts the data (including the activity and feature lists but not the inertial signals) into "dplyr" data frames.
 
 Subsetting only the mean and standard deviation variables for each feature, it binds the "X" training and test frames, renames the feature variables with syntactically valid names, and then subsets accordingly.
 
